@@ -1,0 +1,37 @@
+public class cat {
+
+    String name;
+    String colour;
+    String breed;
+    String Disp;
+    int age;
+
+public cat (String name,String colour,String breed,int age){
+    this.name=name;
+    this.colour=colour;
+    this.breed=breed;
+    this.age=age;
+    
+}
+public String getname(){
+    return name;
+}
+public String getcolour(){
+    return colour;
+}
+public String getbreed(){
+    return breed;
+}
+public int getage(){
+    return age;
+}
+
+public String Disp(){
+    return ("The cat name is"+this.name+"\n The colour is "+this.colour+"\n The breed is"
+    +this.breed+"\nThe Age is "+this.age);
+}
+public static void main(String[] args){
+    cat o=new cat(" Ram"," Black"," Perssian", 2);
+    System.out.println(o.Disp());
+
+}}
